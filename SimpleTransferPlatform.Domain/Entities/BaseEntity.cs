@@ -8,10 +8,10 @@
         public DateTimeOffset? DateDeleted { get; private set; }
 
 
-        public BaseEntity()
-        {
-            Id = Guid.NewGuid();
-            DateCreated = DateTimeOffset.Now;
-        }
+        public BaseEntity() { Id = Guid.NewGuid(); }
+
+        public void SetCreated() => DateCreated = DateTimeOffset.UtcNow;
+        public void SetModified() => DateModified = DateTimeOffset.UtcNow;
+        public void SetDeleted() => DateDeleted = DateTimeOffset.UtcNow;
     }
 }

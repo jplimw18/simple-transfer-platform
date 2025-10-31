@@ -2,7 +2,7 @@
 
 namespace SimpleTransferPlatform.Domain.Interfaces
 {
-    public interface ICommonRepository : IBaseRepository<Common>
+    public interface ICommonRepository : IBaseRepository<Common>, IUserRepository<Common>
     {
         Task<Common> GetByCpf(string cpf, CancellationToken cancellationToken);
     }
