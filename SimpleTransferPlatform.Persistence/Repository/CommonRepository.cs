@@ -1,4 +1,5 @@
-﻿using SimpleTransferPlatform.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SimpleTransferPlatform.Domain.Entities;
 using SimpleTransferPlatform.Domain.Interfaces;
 using SimpleTransferPlatform.Persistence.Context;
 
@@ -8,14 +9,14 @@ namespace SimpleTransferPlatform.Persistence.Repository
     {
         public CommonRepository(AppDbContext context) : base(context) { }
 
-        public Task<Common> GetByCpf(string cpf, CancellationToken cancellationToken)
+        public async Task<Common> GetByCpf(string cpf, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Context.Set<Common>().FirstOrDefaultAsync(c => c.Cpf == cpf, cancellationToken);
         }
 
-        public Task<User> GetByEmail(string email, CancellationToken cancellationToken)
+        public async Task<Common> GetByEmail(string email, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Context.Set<Common>().FirstOrDefaultAsync(c => c.Email == email, cancellationToken);
         }
     }
 }

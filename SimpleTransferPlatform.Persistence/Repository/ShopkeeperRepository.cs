@@ -1,4 +1,5 @@
-﻿using SimpleTransferPlatform.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SimpleTransferPlatform.Domain.Entities;
 using SimpleTransferPlatform.Domain.Interfaces;
 using SimpleTransferPlatform.Persistence.Context;
 
@@ -9,14 +10,14 @@ namespace SimpleTransferPlatform.Persistence.Repository
         public ShopkeeperRepository(AppDbContext context) : base(context) { } 
 
         
-        public Task<Shopkeeper> GetByCnpj(string cnpj, CancellationToken cancellationToken)
+        public async Task<Shopkeeper> GetByCnpj(string cnpj, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Context.Set<Shopkeeper>().FirstOrDefaultAsync(s => s.Cnpj == cnpj, cancellationToken);
         }
 
-        public Task<User> GetByEmail(string email, CancellationToken cancellationToken)
+        public async Task<Shopkeeper> GetByEmail(string email, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await Context.Set<Shopkeeper>().FirstOrDefaultAsync(s => s.Email == email);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SimpleTransferPlatform.Domain.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
         Task Commit(CancellationToken cancellationToken);
     }
