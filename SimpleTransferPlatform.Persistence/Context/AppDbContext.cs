@@ -7,7 +7,7 @@ namespace SimpleTransferPlatform.Persistence.Context
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Common> CommonUsers { get; set; }
-        public DbSet<Shopkeeper> ShopkeeperUsers { get; set; }
+        public DbSet<CommonUser> CommonUsers { get; set; }
+        public DbSet<ShopkeeperUser> ShopkeeperUsers { get; set; }
     }
 }

@@ -10,10 +10,21 @@
     <Folder Include="Services\" />
     <Folder Include="Shared\Behaviors\" />
     <Folder Include="Shared\Exceptions\" />
-    <Folder Include="UseCases\CreateTranfer\" />
-    <Folder Include="UseCases\CreateUser\" />
-    <Folder Include="UseCases\DeleteUser\" />
-    <Folder Include="UseCases\UpdateUser\" />
+    <Folder Include="UseCases\Transaction\CreateTransaction\" />
+    <Folder Include="UseCases\Transaction\DeleteTransaction\" />
+    <Folder Include="UseCases\Transaction\UpdateTransaction\" />
+    <Folder Include="UseCases\UserCases\DeleteUser\" />
+    <Folder Include="UseCases\UserCases\UpdateUser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.1.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleTransferPlatform.Domain\SimpleTransferPlatform.Domain.csproj" />
   </ItemGroup>
 
 </Project>
