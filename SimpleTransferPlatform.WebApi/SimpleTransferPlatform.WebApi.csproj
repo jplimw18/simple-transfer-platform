@@ -17,4 +17,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleTransferPlatform.Application\SimpleTransferPlatform.Application.csproj" />
+    <ProjectReference Include="..\SimpleTransferPlatform.Persistence\SimpleTransferPlatform.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

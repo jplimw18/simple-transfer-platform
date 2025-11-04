@@ -1,4 +1,4 @@
-namespace SimpleTrasnferPlatform.Application.UseCases.UserCases.CreateUser;
+namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser;
 
 public sealed record CreateUserResponse
 {

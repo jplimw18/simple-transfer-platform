@@ -1,8 +1,8 @@
 using AutoMapper;
 using SimpleTransferPlatform.Domain.Entities;
-using SimpleTrasnferPlatform.Application.UseCases.UserCases.CreateUser.Common;
+using SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Common;
 
-namespace SimpleTrasnferPlatform.Application.UseCases.UserCases.CreateUser.Shopkeeper;
+namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Shopkeeper;
 
 public sealed class CreateShopkeeperMapper : Profile
 {

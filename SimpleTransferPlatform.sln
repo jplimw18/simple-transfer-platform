@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTransferPlatform.Domain", "SimpleTransferPlatform.Domain\SimpleTransferPlatform.Domain.csproj", "{892461B3-D260-4092-A9FC-24D13FCA46CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTrasnferPlatform.Application", "SimpleTrasnferPlatform.Application\SimpleTrasnferPlatform.Application.csproj", "{1DC4AE22-63AA-4DA4-B738-3B7D03E5B911}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTransferPlatform.Application", "SimpleTransferPlatform.Application\SimpleTransferPlatform.Application.csproj", "{1DC4AE22-63AA-4DA4-B738-3B7D03E5B911}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CB647C5D-1CE1-4C0C-8105-97CE79AF5DC8}"
 EndProject

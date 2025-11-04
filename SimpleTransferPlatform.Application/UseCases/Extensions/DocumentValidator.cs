@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
 using FluentValidation;
 
-namespace SimpleTrasnferPlatform.Application.UseCases.Extensions;
+namespace SimpleTransferPlatform.Application.UseCases.Extensions;
 
 public static class DocumentValidator
 {

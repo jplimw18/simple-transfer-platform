@@ -1,7 +1,7 @@
 using AutoMapper;
 using SimpleTransferPlatform.Domain.Entities;
 
-namespace SimpleTrasnferPlatform.Application.UseCases.UserCases.CreateUser.Common;
+namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Common;
 
 public sealed class CreateCommonUserMapper : Profile
 {

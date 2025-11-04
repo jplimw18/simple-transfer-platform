@@ -1,7 +1,7 @@
 using FluentValidation;
-using SimpleTrasnferPlatform.Application.UseCases.Extensions;
+using SimpleTransferPlatform.Application.UseCases.Extensions;
 
-namespace SimpleTrasnferPlatform.Application.UseCases.UserCases.CreateUser.Common;
+namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Common;
 
 public class CreateCommonUserValidator : AbstractValidator<CreateCommonUserRequest>
 {

@@ -1,7 +1,7 @@
 using FluentValidation;
-using SimpleTrasnferPlatform.Application.UseCases.Extensions;
+using SimpleTransferPlatform.Application.UseCases.Extensions;
 
-namespace SimpleTrasnferPlatform.Application.UseCases.UserCases.CreateUser.Shopkeeper;
+namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Shopkeeper;
 
 public class CreateShopkeeperValidator : AbstractValidator<CreateShopkeeperRequest>
 {
