@@ -12,8 +12,6 @@
     <Folder Include="UseCases\Transaction\CreateTransaction\" />
     <Folder Include="UseCases\Transaction\DeleteTransaction\" />
     <Folder Include="UseCases\Transaction\UpdateTransaction\" />
-    <Folder Include="UseCases\UserCases\DeleteUser\" />
-    <Folder Include="UseCases\UserCases\UpdateUser\" />
   </ItemGroup>
 
   <ItemGroup>
