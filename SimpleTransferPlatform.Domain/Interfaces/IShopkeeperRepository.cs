@@ -2,7 +2,7 @@
 
 namespace SimpleTransferPlatform.Domain.Interfaces
 {
-    public interface IShopkeeperRepository : IBaseRepository<ShopkeeperUser>, IUserRepository<ShopkeeperUser>
+    public interface IShopkeeperRepository : IUserRepository<ShopkeeperUser>
     {
         Task<ShopkeeperUser> GetByCnpj(string cnpj, CancellationToken cancellationToken);
     }

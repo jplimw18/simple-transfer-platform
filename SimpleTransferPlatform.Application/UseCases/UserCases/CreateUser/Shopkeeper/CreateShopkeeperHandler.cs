@@ -7,13 +7,13 @@ namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Shopk
 
 public class CreateShopkeeperHandler : IRequestHandler<CreateShopkeeperRequest, CreateUserResponse>
 {
-    private readonly IShopkeeperRepository _shopkeeperRepository;
+    private readonly IUserRepository<ShopkeeperUser> _userRepository;
     private readonly IMapper _mapper;
     private readonly IUnitOfWork _unitOfWork;
 
-    public CreateShopkeeperHandler(IUnitOfWork unitOfWork, IMapper mapper, IShopkeeperRepository shopkeeperRepository)
+    public CreateShopkeeperHandler(IUnitOfWork unitOfWork, IMapper mapper, IShopkeeperRepository userRepository)
     {
-        _shopkeeperRepository = shopkeeperRepository;
+        _userRepository = userRepository;
         _mapper = mapper;
         _unitOfWork = unitOfWork;
     }
@@ -21,7 +21,7 @@ public class CreateShopkeeperHandler : IRequestHandler<CreateShopkeeperRequest, 
     public async Task<CreateUserResponse> Handle(CreateShopkeeperRequest request, CancellationToken cancellationToken)
     {
         var user = _mapper.Map<ShopkeeperUser>(request);
-        _shopkeeperRepository.Create(user);
+        _userRepository.Create(user);
 
         await _unitOfWork.Commit(cancellationToken);
         return _mapper.Map<CreateUserResponse>(user);
