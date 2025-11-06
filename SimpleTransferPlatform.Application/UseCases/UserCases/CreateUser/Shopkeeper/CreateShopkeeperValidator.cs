@@ -1,5 +1,5 @@
 using FluentValidation;
-using SimpleTransferPlatform.Application.UseCases.Extensions;
+using SimpleTransferPlatform.Application.UseCases.Validations;
 
 namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Shopkeeper;
 
