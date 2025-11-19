@@ -9,9 +9,6 @@
   <ItemGroup>
     <Folder Include="Shared\Behaviors\" />
     <Folder Include="Shared\Exceptions\" />
-    <Folder Include="UseCases\Transaction\CreateTransaction\" />
-    <Folder Include="UseCases\Transaction\DeleteTransaction\" />
-    <Folder Include="UseCases\Transaction\UpdateTransaction\" />
   </ItemGroup>
 
   <ItemGroup>

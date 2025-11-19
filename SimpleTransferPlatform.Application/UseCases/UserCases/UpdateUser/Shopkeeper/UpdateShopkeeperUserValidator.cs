@@ -1,5 +1,5 @@
 using FluentValidation;
-using SimpleTransferPlatform.Application.UseCases.Validations;
+using SimpleTransferPlatform.Application.UseCases.CustomValidations;
 using SimpleTransferPlatform.Domain.Entities;
 
 namespace SimpleTransferPlatform.Application.UseCases.UserCases.UpdateUser.Shopkeeper;

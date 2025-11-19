@@ -1,5 +1,5 @@
 using FluentValidation;
-using SimpleTransferPlatform.Application.UseCases.Validations;
+using SimpleTransferPlatform.Application.UseCases.CustomValidations;
 
 namespace SimpleTransferPlatform.Application.UseCases.UserCases.CreateUser.Common;
 
